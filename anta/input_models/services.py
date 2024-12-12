@@ -7,7 +7,9 @@ from __future__ import annotations
 
 from ipaddress import IPv4Address, IPv6Address
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, AnyUrl
+
+from anta.custom_types import Port
 
 
 class DnsServer(BaseModel):
@@ -29,3 +31,20 @@ class DnsServer(BaseModel):
         Server 10.0.0.1 (VRF: default, Priority: 1)
         """
         return f"Server {self.server_address} (VRF: {self.vrf}, Priority: {self.priority})"
+
+class StreamingServer(BaseModel):
+    """Model for a Streaming server configuration."""
+
+    model_config = ConfigDict(extra="forbid")
+    address: IPv4Address | AnyUrl
+    """The IPv4 or URL address of the streaming server."""
+    port: Port
+    """The port used for streaming connectivity."""
+    def __str__(self) -> str:
+        """Return a human-readable string representation of the StreamingServer for reporting.
+
+        Examples
+        --------
+        Server 10.0.0.1 (Port: 9910)
+        """
+        return f"Server {self.address} (Port: {self.port})"

@@ -7,7 +7,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from anta.tests.services import VerifyDNSLookup, VerifyDNSServers, VerifyErrdisableRecovery, VerifyHostname
+from anta.tests.services import VerifyDNSLookup, VerifyDNSServers, VerifyErrdisableRecovery, VerifyHostname,  VerifyStreaming
 from tests.units.anta_tests import test
 
 DATA: list[dict[str, Any]] = [
@@ -207,5 +207,16 @@ DATA: list[dict[str, Any]] = [
                 "`tapagg`: Not found.",
             ],
         },
+    },
+    {
+        "name": "success",
+        "test": VerifyStreaming,
+        "inputs": {
+            "servers": [
+                {"address": "192.168.0.5", "port": 9910}
+                ]
+            },
+        "eos_data": [{"messages": ["tcp\t0\t0 s1-leaf1:40530\t192.168.0.5:9910\tESTABLISHED"]}],
+        "expected": {"result": "success"},
     },
 ]

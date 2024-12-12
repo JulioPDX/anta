@@ -12,7 +12,7 @@ from typing import ClassVar
 from pydantic import BaseModel
 
 from anta.custom_types import ErrDisableInterval, ErrDisableReasons
-from anta.input_models.services import DnsServer
+from anta.input_models.services import DnsServer, StreamingServer
 from anta.models import AntaCommand, AntaTemplate, AntaTest
 from anta.tools import get_dict_superset, get_failed_logs
 
@@ -234,3 +234,53 @@ class VerifyErrdisableRecovery(AntaTest):
 
             if not reason_found:
                 self.result.is_failure(f"`{input_reason}`: Not found.\n")
+
+
+class VerifyStreaming(AntaTest):
+    """Verifies if the streaming connection to destination is established.
+
+    This test performs the following checks for each specified streaming server:
+
+      1. Ensures streaming to specific server is established
+
+    Expected Results
+    ----------------
+    * Success: The test will pass if the streaming server specified in the input is established.
+    * Failure: The test will fail if any of the following conditions are met:
+        - The provided streaming server is not established
+
+    Examples
+    --------
+    ```yaml
+    anta.tests.services:
+      - VerifyStreaming:
+          servers:
+            - address: 10.14.0.1
+              port: 9910
+            - address: 10.14.0.11
+              port: 9910
+    ```
+    """
+
+    categories: ClassVar[list[str]] = ["services"]
+    commands: ClassVar[list[AntaCommand | AntaTemplate]] = [AntaTemplate(template="bash timeout 10 netstat -a | grep {server}:{port}", revision=1, ofmt="text")]
+
+    class Input(AntaTest.Input):
+        """Input model for the VerifyStreaming test."""
+
+        servers: list[StreamingServer]
+        """List of streaming servers to verify."""
+        StreamingServer: ClassVar[type[StreamingServer]] = StreamingServer
+
+    def render(self, template: AntaTemplate) -> list[AntaCommand]:
+        """Render the template for each host in the input list."""
+        return [template.render(server=server.address, port=server.port) for server in self.inputs.servers]
+
+    @AntaTest.anta_test
+    def test(self) -> None:
+        """Main test function for VerifyStreaming."""
+        self.result.is_success()
+
+        for command, server in zip(self.instance_commands, self.inputs.servers):
+            if "ESTABLISHED" not in command.text_output:
+                self.result.is_failure(f"Check streaming to {server}")
