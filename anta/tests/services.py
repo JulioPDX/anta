@@ -263,7 +263,7 @@ class VerifyStreaming(AntaTest):
     """
 
     categories: ClassVar[list[str]] = ["services"]
-    commands: ClassVar[list[AntaCommand | AntaTemplate]] = [AntaTemplate(template="bash timeout 10 netstat -a | grep {server}:{port}", revision=1, ofmt="text")]
+    commands: ClassVar[list[AntaCommand | AntaTemplate]] = [AntaTemplate(template="bash timeout 10 netstat -a", revision=1, ofmt="text")]
 
     class Input(AntaTest.Input):
         """Input model for the VerifyStreaming test."""
