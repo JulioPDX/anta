@@ -12,7 +12,7 @@
         <meta name="author" content="Khelil Sator">
       
       
-        <link rel="canonical" href="https://anta.arista.com/main/usage-inventory-catalog/">
+        <link rel="canonical" href="https://anta.arista.com/stable/usage-inventory-catalog/">
       
       
         <link rel="prev" href="../requirements-and-installation/">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../imgs/favicon.ico">
-      <meta name="generator" content="zensical-0.0.59">
+      <meta name="generator" content="zensical-0.0.69">
     
     
       
@@ -36,12 +36,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.5da3a30f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.e15858d4.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.812a03bb.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.b27955a4.min.css">
       
       
 
@@ -83,14 +83,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#device-inventory" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +100,7 @@
               
   <span id="current-version">
     
-      This is the documentation from the 'main' branch which is not a stable release.
+      You're not viewing the latest version.
     
     <a href="../../stable/usage-inventory-catalog/"><strong>Click here to go to latest stable release.</strong></a>
   </span>
@@ -436,6 +433,20 @@
   </li>
           
           
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
+    <a href="#device-connection-and-refresh" class="md-nav__link">
+      <span class="md-ellipsis">
+        Device Connection and Refresh
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
         </ul>
       </nav>
     
@@ -622,18 +633,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   ANTA CLI
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -657,10 +669,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -684,10 +696,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -711,10 +723,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -738,10 +750,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -765,10 +777,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -792,10 +804,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -819,10 +831,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -846,10 +858,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -873,10 +885,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -900,10 +912,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -959,20 +972,21 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Reports
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -996,10 +1010,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1102,18 +1117,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1137,10 +1153,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1164,10 +1180,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1191,10 +1207,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1218,10 +1234,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1245,10 +1261,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1272,10 +1288,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1299,10 +1315,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1326,10 +1342,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1353,10 +1369,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1380,10 +1396,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1407,10 +1423,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1434,10 +1450,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1461,10 +1477,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1488,10 +1504,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1515,10 +1531,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1542,10 +1558,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1569,10 +1585,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1596,10 +1612,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1623,10 +1639,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1650,10 +1666,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1697,18 +1713,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_21">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7_21">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Routing
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1732,10 +1749,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1759,10 +1776,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1786,10 +1803,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1813,18 +1830,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1848,10 +1866,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1875,10 +1893,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1902,10 +1920,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1929,10 +1947,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1956,10 +1974,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1983,10 +2001,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2010,10 +2028,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2037,10 +2055,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2064,10 +2082,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2118,18 +2137,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Security Advisory
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2153,10 +2173,37 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-advisory/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Report formats and results
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
   
   
   
@@ -2176,10 +2223,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
         
           
-          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
             
   
   
@@ -2196,18 +2243,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2231,10 +2279,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2258,45 +2306,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-advisory/reports/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Reports
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+                  
   
   
   
@@ -2320,10 +2342,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2374,18 +2397,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Advanced Usages
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2409,10 +2433,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2436,10 +2460,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2463,10 +2487,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2490,10 +2514,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2556,18 +2581,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   API Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2591,10 +2617,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2618,10 +2644,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2645,10 +2671,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2672,10 +2698,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2699,10 +2725,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2744,18 +2770,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2779,10 +2806,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2806,10 +2833,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2833,18 +2860,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2868,10 +2896,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2915,18 +2943,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Reporter API
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2950,10 +2979,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2977,10 +3006,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3004,10 +3033,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3031,18 +3060,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3066,10 +3096,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3093,10 +3123,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3259,6 +3290,20 @@
   </li>
           
           
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
+    <a href="#device-connection-and-refresh" class="md-nav__link">
+      <span class="md-ellipsis">
+        Device Connection and Refresh
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
         </ul>
       </nav>
     
@@ -3402,13 +3447,15 @@
 
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
   
 
 
-  <h1 id="__skip">Inventory and Test catalog</h1>
+  <h1>Inventory and Test catalog</h1>
 
 <!--
   ~ Copyright (c) 2023-2026 Arista Networks, Inc.
@@ -3490,6 +3537,63 @@ The file must comply with the following structure:</p>
 <span class="w">    </span><span class="nt">end</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10.0.0.11</span>
 <span class="w">    </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">'fabric'</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">'l2leaf'</span><span class="p p-Indicator">]</span>
 </code></pre></div>
+<h4 id="device-connection-and-refresh">Device Connection and Refresh<a class="headerlink" href="#device-connection-and-refresh" title="Permanent link">&para;</a></h4>
+<p>Before running tests or other eAPI commands, ANTA refreshes each device to verify its endpoint and collect platform information. ANTA refreshes inventory devices concurrently, while the requests shown below occur sequentially for each device.</p>
+<p><code>--timeout</code> and <code>ANTA_TIMEOUT</code> configure the timeout used for eAPI command requests, including inventory refresh, tests, <code>anta exec</code>, and <code>anta debug</code>. They do not configure the preliminary eAPI endpoint check or session login; each of those requests gets its own fixed five-second HTTPX timeout window.</p>
+<textarea hidden class="mermaid-zoom-source timeout-sequence-diagram-source" data-title="ANTA Device Connection and Refresh">
+%%{init: {"sequence": {"actorMargin": 220, "diagramMarginX": 20, "messageMargin": 16, "noteMargin": 6}}}%%
+sequenceDiagram
+    participant ANTA
+    participant EOS as EOS eAPI
+
+    opt Session authentication enabled
+        ANTA->>EOS: POST /login
+        Note over ANTA,EOS: HTTPX timeout: 5 seconds
+        EOS-->>ANTA: Session cookie
+    end
+
+    ANTA->>EOS: HEAD /command-api
+    Note over ANTA,EOS: HTTPX timeout: 5 seconds
+    EOS-->>ANTA: Endpoint available
+
+    ANTA->>EOS: show version
+    Note over ANTA,EOS: --timeout / ANTA_TIMEOUT
+    EOS-->>ANTA: Platform information
+
+    opt Chassis platform
+        ANTA->>EOS: show module
+        Note over ANTA,EOS: --timeout / ANTA_TIMEOUT
+        EOS-->>ANTA: Module information
+    end
+
+</textarea>
+
+<pre class="mermaid"><code>%%{init: {"sequence": {"actorMargin": 220, "diagramMarginX": 20, "messageMargin": 16, "noteMargin": 6}}}%%
+sequenceDiagram
+    participant ANTA
+    participant EOS as EOS eAPI
+
+    opt Session authentication enabled
+        ANTA-&gt;&gt;EOS: POST /login
+        Note over ANTA,EOS: HTTPX timeout: 5 seconds
+        EOS--&gt;&gt;ANTA: Session cookie
+    end
+
+    ANTA-&gt;&gt;EOS: HEAD /command-api
+    Note over ANTA,EOS: HTTPX timeout: 5 seconds
+    EOS--&gt;&gt;ANTA: Endpoint available
+
+    ANTA-&gt;&gt;EOS: show version
+    Note over ANTA,EOS: --timeout / ANTA_TIMEOUT
+    EOS--&gt;&gt;ANTA: Platform information
+
+    opt Chassis platform
+        ANTA-&gt;&gt;EOS: show module
+        Note over ANTA,EOS: --timeout / ANTA_TIMEOUT
+        EOS--&gt;&gt;ANTA: Module information
+    end
+</code></pre>
+<p>With session authentication, login occurs before the endpoint check. The timeout values are independent and do not form a single overall deadline.</p>
 <h3 id="test-catalog">Test Catalog<a class="headerlink" href="#test-catalog" title="Permanent link">&para;</a></h3>
 <p>A test catalog is an instance of the <a href=".././api/catalog/#anta.catalog.AntaCatalog">AntaCatalog</a> class.</p>
 <h4 id="test-catalog-file">Test Catalog File<a class="headerlink" href="#test-catalog-file" title="Permanent link">&para;</a></h4>
@@ -3627,35 +3731,54 @@ The complete list of the tests and their respective inputs is available at the <
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>The following example is a very minimal test catalog:</p>
+<p>The following example is the catalog used throughout this documentation:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="c1"># Load anta.tests.software</span>
 <span class="nt">anta.tests.software</span><span class="p">:</span>
-<span class="w">  </span><span class="c1"># Verifies the device is running one of the allowed EOS version.</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyEOSVersion</span><span class="p">:</span>
-<span class="w">      </span><span class="c1"># List of allowed EOS versions.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyEOSVersion</span><span class="p">:</span><span class="w"> </span><span class="c1"># Verifies the device is running one of the allowed EOS version.</span>
+<span class="w">      </span><span class="nt">versions</span><span class="p">:</span><span class="w"> </span><span class="c1"># List of allowed EOS versions.</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.31.4M</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.32.1F</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.34.0F-41661064.4340F (engineering build)</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyTerminAttrVersion</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">versions</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.25.4M</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.26.1F</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1.38.0</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
 
-<span class="c1"># Load anta.tests.system</span>
 <span class="nt">anta.tests.system</span><span class="p">:</span>
-<span class="w">  </span><span class="c1"># Verifies the device uptime is higher than a value.</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyUptime</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyUptime</span><span class="p">:</span><span class="w"> </span><span class="c1"># Verifies the device uptime is higher than a value.</span>
 <span class="w">      </span><span class="nt">minimum</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyNTP</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
 
-<span class="c1"># Load anta.tests.configuration</span>
+<span class="nt">anta.tests.mlag</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyMlagStatus</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyMlagInterfaces</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyMlagConfigSanity</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
+
 <span class="nt">anta.tests.configuration</span><span class="p">:</span>
-<span class="w">  </span><span class="c1"># Verifies ZeroTouch is disabled.</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyZeroTouch</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyRunningConfigDiffs</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyZeroTouch</span><span class="p">:</span><span class="w"> </span><span class="c1"># Verifies ZeroTouch is disabled.</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">leaf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">spine</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <h4 id="catalog-with-custom-tests">Catalog with custom tests<a class="headerlink" href="#catalog-with-custom-tests" title="Permanent link">&para;</a></h4>
 <p>In case you want to leverage your own tests collection, use your own Python package in the test catalog.
-So for instance, if my custom tests are defined in the <code>custom.tests.system</code> Python module, the test catalog will be:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">custom.tests.system</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyPlatform</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">'cEOS-LAB'</span><span class="p p-Indicator">]</span>
+For instance, if a custom test is defined in the importable Python module <code>anta_custom.dc_project</code>, the test catalog entry is:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">anta_custom.dc_project</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyMinimumUptime</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">minimum</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -3664,25 +3787,22 @@ So for instance, if my custom tests are defined in the <code>custom.tests.system
 </div>
 <h4 id="customize-test-description-and-categories">Customize test description and categories<a class="headerlink" href="#customize-test-description-and-categories" title="Permanent link">&para;</a></h4>
 <p>It might be interesting to use your own categories and customized test description to build a better report for your environment. ANTA comes with a handy feature to define your own <code>categories</code> and <code>description</code> in the report.</p>
-<p>In your test catalog, use <code>result_overwrite</code> dictionary with <code>categories</code> and <code>description</code> to just overwrite these values in your report:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">anta.tests.configuration</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyZeroTouch</span><span class="p">:</span><span class="w"> </span><span class="c1"># Verifies ZeroTouch is disabled.</span>
+<p>In your test catalog, use the <code>result_overwrite</code> dictionary with the <code>categories</code> and <code>description</code> keys to override these values in your report:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">anta.tests.configuration</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyZeroTouch</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">result_overwrite</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">'demo'</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">'pr296'</span><span class="p p-Indicator">]</span>
-<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A custom test</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyRunningConfigDiffs</span><span class="p">:</span>
-<span class="nt">anta.tests.interfaces</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyInterfaceUtilization</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">demo</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">customized</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Verifies Zero Touch Provisioning is disabled in the lab.</span>
+
+<span class="nt">anta.tests.system</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyUptime</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">minimum</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
 </code></pre></div>
-<p>Once you run <code>anta nrfu table</code>, you will see following output:</p>
-<div class="highlight"><pre><span></span><code>┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
-┃<span class="w"> </span>Device<span class="w"> </span>IP<span class="w"> </span>┃<span class="w"> </span>Test<span class="w"> </span>Name<span class="w">                  </span>┃<span class="w"> </span>Test<span class="w"> </span>Status<span class="w"> </span>┃<span class="w"> </span>Message<span class="o">(</span>s<span class="o">)</span><span class="w"> </span>┃<span class="w"> </span>Test<span class="w"> </span>description<span class="w">                              </span>┃<span class="w"> </span>Test<span class="w"> </span>category<span class="w"> </span>┃
-┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
-│<span class="w"> </span>spine01<span class="w">   </span>│<span class="w"> </span>VerifyZeroTouch<span class="w">            </span>│<span class="w"> </span>success<span class="w">     </span>│<span class="w">            </span>│<span class="w"> </span>A<span class="w"> </span>custom<span class="w"> </span><span class="nb">test</span><span class="w">                                 </span>│<span class="w"> </span>demo,<span class="w"> </span>pr296<span class="w">   </span>│
-│<span class="w"> </span>spine01<span class="w">   </span>│<span class="w"> </span>VerifyRunningConfigDiffs<span class="w">   </span>│<span class="w"> </span>success<span class="w">     </span>│<span class="w">            </span>│<span class="w">                                               </span>│<span class="w"> </span>configuration<span class="w"> </span>│
-│<span class="w"> </span>spine01<span class="w">   </span>│<span class="w"> </span>VerifyInterfaceUtilization<span class="w"> </span>│<span class="w"> </span>success<span class="w">     </span>│<span class="w">            </span>│<span class="w"> </span>Verifies<span class="w"> </span>interfaces<span class="w"> </span>utilization<span class="w"> </span>is<span class="w"> </span>below<span class="w"> </span><span class="m">75</span>%.<span class="w"> </span>│<span class="w"> </span>interfaces<span class="w">    </span>│
-└───────────┴────────────────────────────┴─────────────┴────────────┴───────────────────────────────────────────────┴───────────────┘
+<p>Run the catalog against a device:</p>
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--device<span class="w"> </span>dc1-spine1<span class="w"> </span>--catalog<span class="w"> </span>docs/snippets/result-overwrite-catalog.yml<span class="w"> </span>table
 </code></pre></div>
+<p><a class="glightbox" data-type="image" href="../imgs/anta_nrfu_device_dc1spine1_catalog_docs_snippets_resultoverwritecatalogyml_table.svg"><img alt="ANTA table report with customized result fields" class="img_center" loading="lazy" src="../imgs/anta_nrfu_device_dc1spine1_catalog_docs_snippets_resultoverwritecatalogyml_table.svg" width="1600" /></a></p>
 <h4 id="example-script-to-merge-catalogs">Example script to merge catalogs<a class="headerlink" href="#example-script-to-merge-catalogs" title="Permanent link">&para;</a></h4>
 <p>The following script reads all the files in <code>intended/test_catalogs/</code> with names <code>&lt;device_name&gt;-catalog.yml</code> and merge them together inside one big catalog <code>anta-catalog.yml</code> using the new <code>AntaCatalog.merge_catalogs()</code> class method.</p>
 <!-- fmt: off -->
@@ -3772,7 +3892,7 @@ So for instance, if my custom tests are defined in the <code>custom.tests.system
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    September 10, 2026
+    September 14, 2026
   </span>
 
     
@@ -3866,7 +3986,7 @@ So for instance, if my custom tests are defined in the <code>custom.tests.system
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -3874,16 +3994,22 @@ So for instance, if my custom tests are defined in the <code>custom.tests.system
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.6970bfe9.min.js"></script>
+      <script src="../assets/javascripts/bundle.8b1c90bd.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
       
         <script src="../stylesheets/mermaid-zoom.js"></script>
+      
+        <script src="../stylesheets/glightbox-zoom.js"></script>
       
     
   </body>
